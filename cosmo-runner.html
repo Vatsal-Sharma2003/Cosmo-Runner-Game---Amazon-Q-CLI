@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmo Runner: Space Odyssey</title>
+    <link rel="stylesheet" href="cosmo-runner.css">
+</head>
+<body>
+    <div class="game-container">
+        <div id="ui-overlay">
+            <div id="score">Score: 0</div>
+            <div id="game-message">
+                <h1>Cosmo Runner: Space Odyssey</h1>
+                <p>Help AstroBot navigate the alien terrain!</p>
+                <button id="start-button">Start Game</button>
+            </div>
+            <div id="game-over" class="hidden">
+                <h2>Game Over</h2>
+                <p>Your score: <span id="final-score">0</span></p>
+                <button id="restart-button">Play Again</button>
+            </div>
+            <div id="pause-menu" class="hidden">
+                <h2>Game Paused</h2>
+                <button id="resume-button">Resume</button>
+            </div>
+        </div>
+        <canvas id="game-canvas" width="800" height="400"></canvas>
+    </div>
+    <script src="cosmo-runner.js"></script>
+</body>
+</html>
